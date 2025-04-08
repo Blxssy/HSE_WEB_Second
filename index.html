@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather App</title>
+		<link rel="stylesheet" href="/src/styles.css" />
+	</head>
+	<body>
+		<h1>Weather App</h1>
+		<p>Check weather details of different cities</p>
+
+		<form id="searchForm">
+			<input type="text" id="cityInput" placeholder="Enter city" required />
+			<button type="submit">Search</button>
+		</form>
+
+		<div id="currentWeather"></div>
+		<div id="forecast"></div>
+
+		<h2>Popular Cities</h2>
+		<div id="popularCities" class="popular-cities">
+			<button data-city="Nizhny Novgorod">Nizhny Novgorod</button>
+			<button data-city="Moscow">Moscow</button>
+			<button data-city="Tokyo">Tokyo</button>
+			<button data-city="New York">New York</button>
+		</div>
+
+		<script type="module" src="/src/main.js"></script>
+	</body>
+</html>
